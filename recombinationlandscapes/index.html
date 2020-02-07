@@ -43,7 +43,7 @@
 			<!-- Phylogenetic circle showing advances in the database -->
 				<div align="center", margin:auto>
 				<img src="../img/Maps_phylogeny.png" width="1000" height="1000" title="Phylogenetic view of the project">
-				<legend>Phylogenetic view of the advancement of the project, showing available data across all plants. Species in grey correspond to plant species with either a genetic map or a chromosome-level genome. Species in black are species for which we have both the genetic and physical maps, but are not processed and validated yet. Finally, species in red are species with a validated Marey map (i.e. both genetic and physical maps are validated) and for which we were able to estimate a recombination map.</legend>
+				<legend>Phylogenetic view of the advancement of the project, showing available data across all plants. Species in grey correspond to plant species with either a genetic map or a chromosome-level genome. Species in black are species for which we have both the genetic and physical maps, but that have not been validated yet (e.g. for bad quality and large amount of errors). Finally, species in red are species with a validated Marey map (i.e. both genetic and physical maps are validated) and for which we were able to estimate a recombination map.</legend>
 				</div>
 
 					<h2>Estimating recombination rates</h2>
@@ -123,8 +123,8 @@
 					<p><a href="../recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
 
 					<h2>Recombination landscapes</h2>
-					<p>A selection of recombination landscapes estimated by LOESS regression. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
-						Dashed lines represent the CI at 95%. The span parameter value was optimized with K-fold cross validation to avoid overfitting.</p>
+					<p>A selection of recombination landscapes estimated by LOESS regression on windows of 1Mb. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
+						Dashed lines represent the CI at 95%. The intensity of the smoothing, parameterized by the span value, was optimized with K-fold cross validation in order to avoid overfitting.</p>
 
 					<div align="center", margin:auto>
 					<img src="../gallery/rec_maps/Arabidopsis_thaliana_Serin2017_chr1_1Mbwind.png" width="800" title="Arabidopsis thaliana chromosome 1">
