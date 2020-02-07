@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+		</head>
+		<body>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/recombinationlandscapes">Recombination Landscapes Project</a></li>
+	    		</ul>
+			</nav>
+			<div class="results">
+				<h2>An overview on recombination landscapes across Angiosperms</h2>
+				<p>
+					Meiotic recombination is a crucial mechanism for eukaryotes involved in genome evolution. Because recombination enhances genetic shuffling during the meiosis, it constantly produces new genetic combinations and enhances genetic diversity in populations.
+					Recombination decreases the genetic linkage between loci, hence counteracting interferences between linked loci (the Hill-Robertson interference) and enhancing the efficacy of selection  <cite><a href="https://doi.org/10.1017/S0016672300010156"></a>(Hill & robertson, 1966)</cite>.
+					By reducing allelic correlations, the recombination increases genetic variation and efficiently purge deleterious mutations ().
+					Meiotic recombination events also imply molecular consequences, with DNA double strands break (DSB) and repair mechanisms of homologous sequences are generally biased toward GC nucleotides in a lot of species <cite><a href=""></a>(Galtier et al., 2001; Duret & Galtier, 2009; Glémin et al., 2015; Rousselle et al., 2019)</cite>.
+
+					Then, reliable estimates of local recombination rates along the genome, also defined as recombination landscapes, are highly relevant in the study of genome evolution, as they may help to understand how species respond to selection and adapt to their environment.
+				</p>
+
+				<p>
+					Variation in Genome Wide Recombination Rates (GwRR) have been recently reviewed in Eukaryotes, in regard to the many drivers of recombination, from individual to distantly related species levels <cite><a href="https://doi.org/10.1098/rstb.2016.0455"></a>(Stapley et al., 2017)</cite>.
+					Yet, this review proved the need for a broad-scale study of the recombination landscapes, i.e. the distribution of the recombination rate within the chromosome.
+					Angiosperms present a high variation of genome architecture, with a 55-fold variation in genome size and 10-fold in number of chromosomes, associated to chromosomal rearrangements (chromosomal inversions, gene duplications).
+					Besides, genomic features such as the local recombination rate, gene density or the nucleotide composition (GC content) vary greatly, and recombination is suspected to directly interact with many genome evolution processes, such as transposable elements (TE) or GC-biased gene conversion (gBGC) (Gaut et al., 2007).
+					Although, the study of nucleotide composition is still recent compared to metazoans, especially mammals, and recombination landscapes still need to be explored across the overall Angiosperms taxa.
+					Thus, the comparison of recombination and genomic landscapes is promising in the understanding of patterns of recombination at a large phylogenetic scale for a taxonomic group of high ecological importance.
+				</p>
+
+				<p>
+					Based on a comparative genomic approach, we'll try to assemble a large dataset of Angiosperms' recombination landscapes to assess the variation of the recombination rate as a function of genome architecture and genomic features.
+					Once published in a public database, these recombination landscapes should be a great advance for the scientific community that would like to test evolutionary hypotheses on a rich broad-scale dataset compared to genomic or ecological data of their own (e.g. life history traits, reproductive system).
+					This project is the first part of my PhD thesis about recombination landscapes and genome evolution in Angiosperms, and I am supervised by <cite><a href="http://sylvain.glemin.pagesperso-orange.fr/sylvain-glemin/Home.html"></a>Sylvain Glémin</cite> (CNRS/ECOBIO).
+				</p>
+
+			<!-- Phylogenetic circle showing advances in the database -->
+				<div align="center", margin:auto>
+				<img src="/img/Maps_phylogeny.png" height="100" title="Phylogenetic view of the project">
+				<p style="font-size:10px">Phyloenetic view of the advancement of the project, showing avalaible data across all plants. Species in grey correspond to plant species with either a genetic map or a chromosome-level genome. Species in black are species for which we have both the genetic and physical maps, but are not processed and validated yet. Finally, species in red are species with a validated Marey map (i.e. both genetic and physical maps are validated) and for which we were able to estimate a recombination map.</p>
+				</div>
+
+					<h2>Estimating recombination rates</h2>
+
+					<h3>Marey maps</h3>
+					<p>We already have a first validated dataset of 16 Marey maps  produced with a standardised pipeline and waiting to be integrated in further analyses.</p>
+
+					  {% include image-gallery.html folder="/gallery/marey" %}
+
+					<p><a href="/recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
+
+					<h2>Recombination landscapes</h2>
+					<p>A selection of recombination landscapes estimated by LOESS regression. The local recombination rate (cM/Mb) is the derivative in a point of the LOESS function fitting the data.
+						Dashed lines represent the CI at 95%. The span parameter value was optimized with K-fold cross validation to avoid overfitting.</p>
+
+						{% include image-gallery.html folder="/gallery/rec_maps" %}
+
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:brazier.thomas@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/thomasbrazier">github.com/thomasbrazier</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
