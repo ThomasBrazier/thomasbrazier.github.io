@@ -1,29 +1,145 @@
----
-layout: default
-title: Recombination Landscapes and Genome Evolution in Angiosperms
----
-<div class="results">
-	<h2>An overview on recombination landscapes across Angiosperms</h2>
-	<p>Recombination is a crucial mechanism for eukaryotes involved in genome evolution. Because recombination enhances genetic admixture during the meiosis, it constantly produces new genetic combinations in populations, leading to a higher efficiency of selection.
-		Recombination also implies molecular consequences at a nucleotide scale, with DNA double strands break and repair mechanisms generally biased toward GC nucleotides in a lot of species.
-		Then, reliable estimates of the local recombination rates along the genome, also defined as recombination landscapes, are highly relevant in the study of genome evolution, as they may help to understand how species respond to selection and adapt to their environment.
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>An overview on recombination landscapes across Angiosperms</title>
+		</head>
+		<body>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="../css/main.css">
+			<nav>
+	    		<ul>
+	        		<li><a href="../index.html">Home</a></li>
+		        	<li><a href="../about/index.html">About</a></li>
+	        		<li><a href="../recombinationlandscapes/index.html">Recombination Landscapes Project</a></li>
+	    		</ul>
+			</nav>
+			<script src="../scripts/slideshow_gallery.js"></script>
+			<div class="results">
+				<h2>An overview on recombination landscapes across Angiosperms</h2>
+				<p>
+					Meiotic recombination is a crucial mechanism for eukaryotes involved in genome evolution. Because recombination enhances genetic shuffling during the meiosis, it constantly produces new genetic combinations and enhances genetic diversity in populations.
+					Recombination decreases the genetic linkage between loci, hence counteracting interferences between linked loci (the Hill-Robertson interference) and enhancing the efficacy of selection  <cite><a href="https://doi.org/10.1017/S0016672300010156"></a>(Hill & Robertson, 1966)</cite>.
+					By reducing allelic correlations, the recombination increases genetic variation and efficiently purge deleterious mutations ().
+					Meiotic recombination events also imply molecular consequences, with DNA double strands break (DSB) and repair mechanisms of homologous sequences are generally biased toward GC nucleotides in a lot of species <cite><a href=""></a>(Galtier et al., 2001; Duret & Galtier, 2009; Glémin et al., 2015; Rousselle et al., 2019)</cite>.
 
-		Angiosperms present a high variation of genome architectures, with a large range of genome size, number of chromosomes, average recombination rate or nucleotide composition. Although, the study of nucleotide composition is still recent compared to metazoans, especially mammals, and recombination landscapes still need to be explored across the overall Angiosperms taxa.
+					Then, reliable estimates of local recombination rates along the genome, also defined as recombination landscapes, are highly relevant in the study of genome evolution, as they may help to understand how species respond to selection and adapt to their environment.
+				</p>
 
-		Based on a comparative genomic approach, we'll try to assemble a large dataset of recombination landscapes to assess the variation of the recombination rate across the whole Angiosperm group.
-	</p>
+				<p>
+					Variation in Genome Wide Recombination Rates (GwRR) have been recently reviewed in Eukaryotes, in regard to the many drivers of recombination, from individual to distantly related species levels <cite><a href="https://doi.org/10.1098/rstb.2016.0455"></a>(Stapley et al., 2017)</cite>.
+					Yet, this review proved the need for a broad-scale study of the recombination landscapes, i.e. the distribution of the recombination rate within the chromosome.
+					Angiosperms present a high variation of genome architecture, with a 55-fold variation in genome size and 10-fold in number of chromosomes, associated to chromosomal rearrangements (chromosomal inversions, gene duplications).
+					Besides, genomic features such as the local recombination rate, gene density or the nucleotide composition (GC content) vary greatly, and recombination is suspected to directly interact with many genome evolution processes, such as transposable elements (TE) or GC-biased gene conversion (gBGC) (Gaut et al., 2007).
+					Although, the study of nucleotide composition is still recent compared to metazoans, especially mammals, and recombination landscapes still need to be explored across the overall Angiosperms taxa.
+					Thus, the comparison of recombination and genomic landscapes is promising in the understanding of patterns of recombination at a large phylogenetic scale for a taxonomic group of high ecological importance.
+				</p>
 
-		<h2>Marey maps</h2>
-		<p>We already have a first validated dataset of 17 Marey maps waiting to be integrated in further analyses.</p>
+				<p>
+					Based on a comparative genomic approach, we'll try to assemble a large dataset of Angiosperms' recombination landscapes to assess the variation of the recombination rate as a function of genome architecture and genomic features.
+					Once published in a public database, these recombination landscapes should be a great advance for the scientific community that would like to test evolutionary hypotheses on a rich broad-scale dataset compared to genomic or ecological data of their own (e.g. life history traits, reproductive system).
+					This project is the first part of my PhD thesis about recombination landscapes and genome evolution in Angiosperms, and I am supervised by <cite><a href="http://sylvain.glemin.pagesperso-orange.fr/sylvain-glemin/Home.html"></a>Sylvain Glémin</cite> (CNRS/ECOBIO).
+				</p>
 
-		  {% include image-gallery.html folder="/gallery/marey" %}
+			<!-- Phylogenetic circle showing advances in the database -->
+				<div align="center", margin:auto>
+				<img src="../img/Maps_phylogeny.png" width="1000" height="1000" title="Phylogenetic view of the project">
+				<legend>Phylogenetic view of the advancement of the project, showing available data across all plants. Species in grey correspond to plant species with either a genetic map or a chromosome-level genome. Species in black are species for which we have both the genetic and physical maps, but are not processed and validated yet. Finally, species in red are species with a validated Marey map (i.e. both genetic and physical maps are validated) and for which we were able to estimate a recombination map.</legend>
+				</div>
 
-		<p><a href="/recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
+					<h2>Estimating recombination rates</h2>
 
-		<h2>Recombination landscapes</h2>
-		<p>A selection of recombination landscapes estimated by LOESS regression. The local recombination rate (cM/Mb) is the derivative in a point of the LOESS function fitting the data.
-			Dashed lines represent the CI at 95%. The span parameter value was optimized with K-fold cross validation to avoid overfitting. </p>
+					<h3>Marey maps</h3>
+					<p>We already have a first validated dataset of 16 Marey maps  produced with a standardised pipeline and waiting to be integrated in further analyses.
+						You can see below examples of what is a validated Marey map (click on a thumbnail to display the map in full resolution), with a consistent marker order (orders must be in the same order in both genetic and physical maps).
+						Marey maps must show a monotonic increasing function to be validated.
+					</p>
 
-			{% include image-gallery.html folder="/gallery/rec_maps" %}
+						<!-- Container for the image gallery -->
+					 <div class="container">
 
-</div><!-- /.blurb -->
+					   <!-- Full-width images with number text -->
+					   <div class="mySlides">
+					     <div class="numbertext">1 / 6</div>
+					       <img src="../gallery/marey/Arabidopsis_thaliana_Serin2017.png" style="width:100%">
+					   </div>
+
+					   <div class="mySlides">
+					     <div class="numbertext">2 / 6</div>
+					       <img src="../gallery/marey/Brachypodium_distachyon_Huo2011.png" style="width:100%">
+					   </div>
+
+					   <div class="mySlides">
+					     <div class="numbertext">3 / 6</div>
+					       <img src="../gallery/marey/Oryza_sativa_DeLeon2016.png" style="width:100%">
+					   </div>
+
+					   <div class="mySlides">
+					     <div class="numbertext">4 / 6</div>
+					       <img src="../gallery/marey/Theobroma_cacao_Royaert2016.png" style="width:100%">
+					   </div>
+
+					   <div class="mySlides">
+					     <div class="numbertext">5 / 6</div>
+					       <img src="../gallery/marey/Triticum_aestivum_GutierrezGonzalez2019.png" style="width:100%">
+					   </div>
+
+					   <div class="mySlides">
+					     <div class="numbertext">6 / 6</div>
+					       <img src="../gallery/marey/Zea_mays_IBM_MaizeSNP50.png" style="width:100%">
+					   </div>
+
+					   <!-- Next and previous buttons -->
+					   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					   <!-- Image text -->
+					   <div class="caption-container">
+					     <p align="center" id="caption"></p>
+					   </div>
+
+					   <!-- Thumbnail images -->
+					   <div class="row">
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Arabidopsis_thaliana_Serin2017.png" style="width:100%" onclick="currentSlide(1)" alt="Arabidopsis thaliana">
+					     </div>
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Brachypodium_distachyon_Huo2011.png" style="width:100%" onclick="currentSlide(2)" alt="Brachypodium distachyon">
+					     </div>
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Oryza_sativa_DeLeon2016.png" style="width:100%" onclick="currentSlide(3)" alt="Oryza sativa">
+					     </div>
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Theobroma_cacao_Royaert2016.png" style="width:100%" onclick="currentSlide(4)" alt="Theobroma cacao">
+					     </div>
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Triticum_aestivum_GutierrezGonzalez2019.png" style="width:100%" onclick="currentSlide(5)" alt="Triticum aestivum">
+					     </div>
+					     <div class="column">
+					       <img class="demo cursor" src="../gallery/marey/Zea_mays_IBM_MaizeSNP50.png" style="width:100%" onclick="currentSlide(6)" alt="Zea mays">
+					     </div>
+					   </div>
+					 </div>
+
+					<p><a href="../recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
+
+					<h2>Recombination landscapes</h2>
+					<p>A selection of recombination landscapes estimated by LOESS regression. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
+						Dashed lines represent the CI at 95%. The span parameter value was optimized with K-fold cross validation to avoid overfitting.</p>
+
+					<div align="center", margin:auto>
+					<img src="../gallery/rec_maps/Arabidopsis_thaliana_Serin2017_chr1_1Mbwind.png" width="800" title="Arabidopsis thaliana chromosome 1">
+					<img src="../gallery/rec_maps/Brachypodium_distachyon_Huo2011_chr1_1Mbwind.png" width="800" title="Brachypodium distachyon chromosome 1">
+					<img src="../gallery/rec_maps/Oryza_sativa_DeLeon2016_chr1_1Mbwind.png" width="800" title="Oryza sativa chromosome 1">
+					<img src="../gallery/rec_maps/Theobroma_cacao_Royaert2016_chr1_1Mbwind.png" width="800" title="Theobroma cacao chromosome 1">
+					<img src="../gallery/rec_maps/Triticum_aestivum_GutierrezGonzalez2019_chr1A_1Mbwind.png" width="800" title="Triticum aestivum chromosome 1">
+					<img src="../gallery/rec_maps/Zea_mays_IBM_MaizeSNP50_chr1_1Mbwind.png" width="800" title="Zea mays chromosome 1">
+
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:brazier.thomas@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/thomasbrazier">github.com/thomasbrazier</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
