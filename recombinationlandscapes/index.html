@@ -48,7 +48,7 @@
 					<h2>Estimating recombination rates</h2>
 
 					<h3>Marey maps</h3>
-					<p>We already have a first validated dataset of 18 Marey maps  produced with a standardised pipeline and waiting to be integrated in further analyses.
+					<p>We already have a first validated dataset of 25 Marey maps  produced with a standardised pipeline and waiting to be integrated in further analyses.
 						You can see below examples of what is a validated Marey map (click on a thumbnail to display the map in full resolution), with a consistent marker order (orders must be in the same order in both genetic and physical maps).
 						Marey maps must show a monotonic increasing function to be validated.
 					</p>
@@ -122,8 +122,8 @@
 					<p><a href="../recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
 
 					<h2>Recombination landscapes</h2>
-					<p>A selection of recombination landscapes estimated by LOESS regression on windows of 1Mb. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
-						Dashed lines represent the CI at 95%. The intensity of the smoothing, parameterized by the span value, was optimized with K-fold cross validation in order to avoid overfitting.</p>
+					<p>A selection of recombination landscapes estimated by LOESS regression on windows of 100kb. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
+						Dashed lines represent the bootstraped CI at 95%. The intensity of the smoothing, parameterized by the span value, was optimized with K-fold cross validation in order to avoid overfitting.</p>
 
 					<div align="center", margin:auto>
 					<img src="../gallery/rec_maps/Arabidopsis_thaliana_Serin2017_chr1_1Mbwind.png" width="800" title="Arabidopsis thaliana chromosome 1">
