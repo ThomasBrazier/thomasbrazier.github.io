@@ -17,14 +17,7 @@
 			<div class="results">
 				<p>Marey maps in development</p>
 
-				<?php
-				    $files = scandir('../gallery/marey/');
-				    foreach($files as $file) {
-				        if($file !== "." && $file !== "..") {
-				            echo "<img src='$file' />";
-				        }
-				    }
-				?>
+				 <div w3-include-html="../_includes/image-gallery-marey.html folder="../gallery/marey""></div>
 					  {% include image-gallery.html folder="../gallery/marey" %}
 
 				<p>Recombination maps in the validation process</p>
