@@ -121,7 +121,7 @@
 
 					<p><a href="../recombinationlandscapes/chromosome.stats.csv">Download summary statistics of Marey maps (csv)...</a></p>
 
-					<h2>Recombination landscapes</h2>
+					<h2>Recombination landscapes and heterogeneity of recombination</h2>
 					<p>A selection of recombination landscapes estimated by LOESS regression on windows of 100kb. The local recombination rate (cM/Mb) is the derivative in a point of the Marey map, estimated by a LOESS function fitting the data.
 						Dashed lines represent the bootstraped CI at 95%. The intensity of the smoothing, parameterized by the span value, was optimized with K-fold cross validation in order to avoid overfitting.</p>
 
@@ -132,6 +132,15 @@
 					<img src="../gallery/rec_maps/Theobroma_cacao_Royaert2016_chr1.png" width="800" title="Theobroma cacao chromosome 1">
 					<img src="../gallery/rec_maps/Triticum_aestivum_GutierrezGonzalez2019_chr1A.png" width="800" title="Triticum aestivum chromosome 1">
 					<img src="../gallery/rec_maps/Zea_mays_IBM_MaizeSNP50_chr1.png" width="800" title="Zea mays chromosome 1">
+
+					<p>Broad-scale recombination landscapes are expected to reveal that recombination is not homogeneous along the chromosome and may be governed by some genomic features, such as gene density.
+						Besides, this broad-scale pattern may be different between species or even between chromosomes with varying characteristics (e.g. chromosome length, centromere position) and this variability still need to be described.</p>
+
+					<h3>Fine scale recombination landscapes based on polymorphism data reveal hotpsots</h3>
+					<p>Despite valuable advantages (e.g. sex-specific maps), the Marey map approach only porvides a broad-scale estimate of the recombination along the chromosomes, with resolutions usually at a megabase scale and occasionnally 100kb for high density linkage maps and genomes of higher quality.
+						In a second step of our project, we'll rely on Linkage Disequilibrium-based methods using polymorphism data to estimate the historical recombination landscape in a population.
+						This approach is crucial to estimate hotspots of recombination and allow recombination landscapes at a much finer resolution than Marey maps, in order to correlate local variation to genomic patterns (e.g. GC proportion in third codon, biased codon usage).
+					</p>
 
 			</div>
 			<footer>
