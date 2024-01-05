@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic</title>
+    <link>https://example.com/</link>
+      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 16 Dec 2023 13:14:06 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu2afe7b932772882c44ee7f7c5c4ca48a_10411_512x512_fill_lanczos_center_3.png</url>
+      <title>Academic</title>
+      <link>https://example.com/</link>
+    </image>
+    
+    <item>
+      <title>New preprint: Ubiquitous recombination gradients within plant genic regions shaped by recombination hotspots</title>
+      <link>https://example.com/post/recombination-gradients/</link>
+      <pubDate>Sat, 16 Dec 2023 13:14:06 +0000</pubDate>
+      <guid>https://example.com/post/recombination-gradients/</guid>
+      <description>&lt;p&gt;My second PhD paper about meiotic recombination in plants is now accessible as a preprint in &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/2023.12.12.571209v1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BioRXiv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We found that recombination hostpots are ubiquitous in plant genic regions, mostly in promoters and terminators. As a consequence of this pattern, plant genic regions sequences experience recombination gradients along the coding sequence, and the middle of genes recombine less than the edge. You can find out more in the &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/2023.12.12.571209v1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preprint&lt;/a&gt; awaiting for a good peer review.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ubiquitous recombination gradients within plant genic regions shaped by recombination hotspots</title>
+      <link>https://example.com/publication/recombination-gradients/</link>
+      <pubDate>Sat, 18 Nov 2023 10:11:00 +0000</pubDate>
+      <guid>https://example.com/publication/recombination-gradients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New publication: Diversity and determinants of recombination landscapes in flowering plants</title>
+      <link>https://example.com/post/diversity-and-determinants-of-recombination-landscapes-in-flowering-plants/</link>
+      <pubDate>Sat, 12 Nov 2022 13:14:06 +0000</pubDate>
+      <guid>https://example.com/post/diversity-and-determinants-of-recombination-landscapes-in-flowering-plants/</guid>
+      <description>&lt;p&gt;My new paper about meiotic recombination in plants is now published in &lt;a href=&#34;https://doi.org/10.1371/journal.pgen.1010141&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PLOS Genetics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Meiotic recombination is a universal feature of sexually reproducing species. During meiosis, crossovers play a fundamental role for the proper segregation of chromosomes during meiosis and reshuffles alleles among chromosomes. How much variation in recombination is expected within a genome and among different species remains a central question for understanding the evolution of recombination. We characterized and compared recombination landscapes in a large set of plant species with a wide range of genome size. We found that the number of crossovers varied little among species, from one mandatory to no more than five or six crossovers per chromosomes, whatever the genome size. However, we identified two main patterns of variation along chromosomes (with a few exceptions) that can be explained by a new conceptual model where chromosome length, chromosome structure and gene density play a role. The strong association between gene density and recombination was already known, but raised new questions not only about the evolution of recombination rates but also on their distribution along chromosomes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diversity and determinants of recombination landscapes in flowering plants</title>
+      <link>https://example.com/publication/diversity-and-determinants-of-recombination-landscapes-in-flowering-plants/</link>
+      <pubDate>Mon, 04 Jul 2022 10:11:00 +0000</pubDate>
+      <guid>https://example.com/publication/diversity-and-determinants-of-recombination-landscapes-in-flowering-plants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The influence of native populations’ genetic history on the reconstruction of invasion routes: the case of a highly invasive aquatic species</title>
+      <link>https://example.com/publication/the-influence-of-native-populations-genetic-history-on-the-reconstruction-of-invasion-routes-the-case-of-a-highly-invasive-aquatic-species/</link>
+      <pubDate>Fri, 04 Feb 2022 10:11:00 +0000</pubDate>
+      <guid>https://example.com/publication/the-influence-of-native-populations-genetic-history-on-the-reconstruction-of-invasion-routes-the-case-of-a-highly-invasive-aquatic-species/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolution 2021</title>
+      <link>https://example.com/talk/evolution-2021/</link>
+      <pubDate>Mon, 21 Jun 2021 09:19:08 +0000</pubDate>
+      <guid>https://example.com/talk/evolution-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drivers of longitudinal telomere dynamics in the long‐lived bat species, Myotis myotis</title>
+      <link>https://example.com/publication/drivers-of-longitudinal-telomere-dynamics-in-the-longlived-bat-species-i-myotis-myotis-i/</link>
+      <pubDate>Tue, 04 Feb 2020 10:11:00 +0000</pubDate>
+      <guid>https://example.com/publication/drivers-of-longitudinal-telomere-dynamics-in-the-longlived-bat-species-i-myotis-myotis-i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
